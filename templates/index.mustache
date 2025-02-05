@@ -24,202 +24,113 @@
     }
 }}
 
-{{! .media component example }}
-<h2 class="h3">Example of .media component</h2>
-<div class="media">
-    <img class="mr-3" src="https://picsum.photos/100/100">
-    <div class="media-body">
-        <h3 class="h5 mt-0">Media heading</h5>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas unde voluptates quia illo, deserunt, ex quaerat cum libero tempora dicta dolores non dolorem ullam necessitatibus ducimus distinctio. Vero, dolor ipsam!
-    </div>
-</div>
+<div data-region="bs4-compat">
+    <h2 class="h3 mt-5">Example of old data-attributes</h2>
 
-{{! .badge component example }}
-<h2 class="h3 mt-5">Examples of badges</h2>
-<div class="d-flex">
-    <span class="badge badge-primary mr-2">Primary</span>
-    <span class="badge badge-secondary mr-2">Secondary</span>
-    <span class="badge badge-success mr-2">Success</span>
-    <span class="badge badge-danger mr-2">Danger</span>
-    <span class="badge badge-warning mr-2">Warning</span>
-    <span class="badge badge-info mr-2">Info</span>
-    <span class="badge badge-light mr-2">Light</span>
-    <span class="badge badge-dark mr-2">Dark</span>
-    <span class="badge badge-primary badge-pill mr-2">Badge pill</span>
-</div>
-
-{{! .form component example }}
-<h2 class="h3 mt-5">Examples of forms</h2>
-
-<div class="form-group">
-    <label for="formGroupExampleInput">Example label</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-</div>
-
-<form class="form-inline">
-    <div class="form-group">
-        <label class="accesshide" for="test">{{#str}}search{{/str}}</label>
-        <input type="text" class="form-control" id="test" placeholder="{{#str}}search{{/str}}" value="">
-        <button class="btn btn-secondary icon-no-margin ml-1">{{#pix}}a/search, ,{{#str}}search{{/str}}{{/pix}}</button>
-    </div>
-</form>
-
-{{! .card-deck example }}
-<h2 class="h3 mt-5">Example of card deck</h2>
-
-<div class="card-deck">
-    <div class="card">
-        <div class="card-header">Header</div>
-        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        <div class="card-footer">Footer</div>
-    </div>
-    <div class="card">
-        <div class="card-header">Header</div>
-        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        <div class="card-footer">Footer</div>
-    </div>
-    <div class="card">
-        <div class="card-header">Header</div>
-        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        <div class="card-footer">Footer</div>
-    </div>
-    <div class="card">
-        <div class="card-header">Header</div>
-        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        <div class="card-footer">Footer</div>
-    </div>
-    <div class="card">
-        <div class="card-header">Header</div>
-        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        <div class="card-footer">Footer</div>
-    </div>
-</div>
-
-{{! .no-gutters example }}
-<h2 class="h3 mt-5">Example of .no-gutters</h2>
-
-<div class="row no-gutters">
-    <div class="col-4">
-        <div class="border rounded p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    </div>
-    <div class="col-4">
-        <div class="border rounded p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    </div>
-    <div class="col-4">
-        <div class="border rounded p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    </div>
-</div>
-
-{{! Spacing amd border utilities example }}
-<h2 class="h3 mt-5">Example of spacing amd border utilities</h2>
-
-<div class="d-flex">
-    <div class="pl-0 pr-0 pl-sm-4 pr-sm-4 ml-0 mr-0 ml-sm-4 mr-sm-4">
-        <div class="border-left rounded left border-right rounded-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    </div>
-    <div class="pl-0 pr-0 pl-sm-4 pr-sm-4 ml-0 mr-0 ml-sm-4 mr-sm-4">
-        <div class="border-left rounded left border-right rounded-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    </div>
-</div>
-
-{{! Float utilities example }}
-<h2 class="h3 mt-5">Example of float</h2>
-
-<div>
-    <div class="float-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-    <div class="float-right"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-</div>
-
-{{! Text utilities example }}
-<h2 class="h3 mt-5">Example of text utilities</h2>
-<div>
-    <div class="text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-    <div class="text-right"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-</div>
-
-{{! .close example }}
-<h2 class="h3 mt-5">Example of .close</h2>
-<div class="alert alert-warning">
-    <strong>Hey!</strong> I'm an alert, read me.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+    {{! Collapse example }}
+    <button class="btn btn-secondary mb-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        Toggle width collapse
     </button>
-</div>
-
-{{! Font utilities example }}
-<h2 class="h3 mt-5">Example of Font utilities</h2>
-<span class="font-weight-bold"> This is an example of bold text </span>
-<span class="font-italic"> This is an example of italic text </span>
-
-{{! Rounded sizes example }}
-<h2 class="h3 mt-5">Example of Rounded sizes</h2>
-<div class="rounded-lg border p-2 mb-2">
-    Exercitation velit aliquip fugiat voluptate sint pariatur duis pariatur consequat sunt amet aute laboris. Incididunt officia Lorem anim nulla ut.
-    Esse commodo incididunt ut esse commodo sint sunt sunt officia. Nisi id nulla esse nisi. Sit nostrud duis dolore est labore non labore.
-    Deserunt mollit ad ipsum laborum voluptate duis consectetur eu laborum nostrud consectetur esse.
-</div>
-<div class="rounded-sm border p-2 mb-2">
-    Exercitation velit aliquip fugiat voluptate sint pariatur duis pariatur consequat sunt amet aute laboris. Incididunt officia Lorem anim nulla ut.
-    Esse commodo incididunt ut esse commodo sint sunt sunt officia. Nisi id nulla esse nisi. Sit nostrud duis dolore est labore non labore.
-    Deserunt mollit ad ipsum laborum voluptate duis consectetur eu laborum nostrud consectetur esse.
-</div>
-
-{{! .sr-only example }}
-<h2 class="h3 mt-5">Example of Screen reader only</h2>
-<span class="sr-only">
-    Exercitation velit aliquip fugiat voluptate sint pariatur duis pariatur consequat sunt amet aute laboris. Incididunt officia Lorem anim nulla ut.
-    Esse commodo incididunt ut esse commodo sint sunt sunt officia. Nisi id nulla esse nisi. Sit nostrud duis dolore est labore non labore.
-    Deserunt mollit ad ipsum laborum voluptate duis consectetur eu laborum nostrud consectetur esse.
-</span>
-<a href="#" class="sr-only-focusable">
-    Exercitation velit aliquip fugiat voluptate sint pariatur duis pariatur consequat sunt amet aute laboris. Incididunt officia Lorem anim nulla ut.
-    Esse commodo incididunt ut esse commodo sint sunt sunt officia. Nisi id nulla esse nisi. Sit nostrud duis dolore est labore non labore.
-    Deserunt mollit ad ipsum laborum voluptate duis consectetur eu laborum nostrud consectetur esse.
-</a>
-
-{{! custom-controls example }}
-<h2 class="h3 mt-5">Example of custom controls</h2>
-
-<div class="custom-control custom-checkbox mb-3">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-</div>
-
-<div class="mb-3">
-    <div class="custom-control custom-radio">
-        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-        <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+    <div>
+        <div class="collapse width" id="collapseWidthExample">
+            <div class="card card-body" style="width: 320px;">
+                This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+            </div>
+        </div>
     </div>
-    <div class="custom-control custom-radio">
-        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-        <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+
+    {{! Modal example }}
+    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    {{! Carousel example }}
+    <div id="carouselExampleControls" class="carousel slide p-3 border rounded mb-3" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a obcaecati molestias quae dicta corrupti minima error laboriosam est qui, dolore rem autem? Voluptatum est, fugit quod adipisci dicta nesciunt!
+            </div>
+            <div class="carousel-item">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a obcaecati molestias quae dicta corrupti minima error laboriosam est qui, dolore rem autem? Voluptatum est, fugit quod adipisci dicta nesciunt!
+
+            </div>
+        </div>
+        <button class="carousel-control-prev bg-dark rounded" type="button" data-target="#carouselExampleControls" data-slide="prev">
+            <span>Previous</span>
+        </button>
+        <button class="carousel-control-next bg-dark rounded" type="button" data-target="#carouselExampleControls" data-slide="next">
+            <span>Next</span>
+        </button>
+    </div>
+
+    {{! Tooltip example }}
+    <button type="button" class="btn btn-secondary mb-3" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+    </button>
+
+    {{! Alert dismissable example }}
+    <div class="alert alert-warning alert-dismissible fade show mb-3" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    {{! Dropdown example }}
+    <div class="dropdown mb-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-secondary mb-3" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+        Click to toggle popover
+    </button>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="messages-tab" data-toggle="tab" data-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile</div>
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Messages</div>
     </div>
 </div>
 
-<div class="mb-3">
-<select class="custom-select" required>
-    <option value="">Choose...</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-</select>
-</div>
-
-<div class="custom-file mb-3">
-    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-</div>
-
-<div class="custom-control custom-switch">
-    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-    <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-</div>
-
-<label for="customRange1">Example range</label>
-<input type="range" class="custom-range" id="customRange1">
-
-{{! Block button example }}
-<h2 class="h3 mt-5">Example of .btn-block</h2>
-
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+{{#js}}
+require(['theme_boost/bs4-compat'], function(BS4Compat) {
+    BS4Compat();
+});
+{{/js}}
